@@ -1,0 +1,12 @@
+ALFKI Rössle Sauerkraut Produce 1997-09-02 00:00:00.000
+ALFKI Chartreuse verte Beverages 1997-09-02 00:00:00.000
+ALFKI Spegesild Seafood 1997-09-02 00:00:00.000
+ALFKI Vegie-spread Condiments 1997-10-13 00:00:00.000
+ALFKI Aniseed Syrup Condiments 1997-10-21 00:00:00.000
+ALFKI Lakkalikööri Beverages 1997-10-21 00:00:00.000
+ALFKI Raclette Courdavault Dairy Products 1998-01-21 00:00:00.000
+ALFKI Original Frankfurter grüne Soße Condiments 1998-01-21 00:00:00.000
+ALFKI Rössle Sauerkraut Produce 1998-03-24 00:00:00.000
+ALFKI Grandma's Boysenberry Spread Condiments 1998-03-24 00:00:00.000
+ALFKI Escargots de Bourgogne Seafood 1998-04-13 00:00:00.000
+ALFKI Flotemysost Dairy Products 1998-04-13 00:00:00.000

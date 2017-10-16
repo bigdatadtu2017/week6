@@ -1,0 +1,12 @@
+ALFKI 10643 28 Rössle Sauerkraut
+ALFKI 10643 39 Chartreuse verte
+ALFKI 10643 46 Spegesild
+ALFKI 10692 63 Vegie-spread
+ALFKI 10702 3 Aniseed Syrup
+ALFKI 10702 76 Lakkalikööri
+ALFKI 10835 59 Raclette Courdavault
+ALFKI 10835 77 Original Frankfurter grüne Soße
+ALFKI 10952 28 Rössle Sauerkraut
+ALFKI 10952 6 Grandma's Boysenberry Spread
+ALFKI 11011 58 Escargots de Bourgogne
+ALFKI 11011 71 Flotemysost

@@ -11,25 +11,25 @@ Created on Mon Oct 16 11:19:35 2017
 
 #SQLite
 import sqlite3 # import packages
-dataSQL = sqlite3.connect('northwind.db')
-dataSQL.text_factory = bytes
-c = dataSQL.cursor()
+dataSQL = sqlite3.connect('northwind.db')   #connect to SQLite data base
+dataSQL.text_factory = bytes    #avoid decoding errors
+c = dataSQL.cursor()    #define cursor
 for row in c.execute('''
-                     SELECT o.CustomerID, o.OrderID, d.ProductID, p.ProductName
+                     SELECT o.CustomerID, o.OrderID, d.ProductID, p.ProductName -- #Output
                      FROM Orders o
-                     INNER JOIN [Order Details] d
-                     on o.OrderID = d.OrderID
-                     INNER JOIN Products p
-                     on d.ProductID = p.ProductID
-                     WHERE o.CustomerID = 'ALFKI' '''):
+                     INNER JOIN [Order Details] d --#INNER JOINS Orders and Order Details
+                         on o.OrderID = d.OrderID
+                     INNER JOIN Products p --#INNER JOINS with products
+                         on d.ProductID = p.ProductID
+                     WHERE o.CustomerID = 'ALFKI' '''): #For ALFKI
     print(row)
     
 #%%
 
 from pymongo import MongoClient #import packages
-client = MongoClient('localhost', 27017)
+client = MongoClient('localhost', 27017)    #Finds DB
 db = client.Northwind # Get the database
-for order in db['orders'].find({'CustomerID' : 'ALFKI'}):
-    for product in db['order-details'].find({'OrderID': order['OrderID']}):
-        for name in db['products'].find({'ProductID': product['ProductID']}):
+for order in db['orders'].find({'CustomerID' : 'ALFKI'}): #For ALFKI
+    for product in db['order-details'].find({'OrderID': order['OrderID']}): #Find Order Details
+        for name in db['products'].find({'ProductID': product['ProductID']}): #Find Products
             print(order['CustomerID'],order['OrderID'],product['ProductID'],name['ProductName'])
